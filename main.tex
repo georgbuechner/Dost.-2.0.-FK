@@ -8,33 +8,41 @@ marginparsep=0.4cm]{geometry}
 \usepackage{nameref}
 
 \newcommand{\game}{\emph{Dost.-2.0 FK}}
+\newcommand{\creators}{\emph{Alex \& fux}}
 
 \pagestyle{fancy}
 \fancyhf{}
 \lhead{kawa-i}
-\chead{\glqq\game\grqq}
+\chead{>>\game{}<<}
 \rhead{\thepage}
 
 \title{
   { \Large 
-    \textbf{\textsc{>>\game<<}}\\
+    \textbf{\textsc{>>\acs{dost2}<<}}\\
   }
   \vspace{0.4cm}
   { \large \color{gray}
     \textsc{Ein futur-dialektisches Liverollenspiel}
   }
 }
-\author{fux // ananymes kollektiv}
+\author{\creators // ananymes kollektiv}
 \date{{\small \today}}
 
 \begin{document}
 \frontmatter
-\maketitle
 
-\chapter*{Abstract/Auschreibung}
+\begingroup
+  \hypersetup{hidelinks}
+  \maketitle
+\endgroup
+
+\chapter*{Abstract // Auschreibung}
 \input{chapters/abstract}
 
-\tableofcontents
+\begingroup
+  \hypersetup{hidelinks}
+  \tableofcontents
+\endgroup
 
 % ABKÜRZUNGSVERZEICHNIS
 \input{includes/acronym}
@@ -44,6 +52,10 @@ marginparsep=0.4cm]{geometry}
 \input{chapters/einleitung}
 
 \chapter{Spielmechanik}
-\section{Blackouts}\label{sec:blackouts}
+\input{chapters/spielmechanik}
+
+\chapter{Kollektive Arbeit}
+\input{chapters/kollektive_arbeit}
+
 
 \end{document}
