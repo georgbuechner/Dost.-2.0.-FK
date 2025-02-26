@@ -8,5 +8,4 @@ debug:
 	pdflatex -output-directory=build/ main.tex
 
 final: 
-	cp build/main.pdf ~/Documents/seafile/uni/final/dost-2-0-fk.pdf
-
+	cp build/main.pdf ~/Documents/seafile/uni/finals/dost-2-0-fk.pdf
