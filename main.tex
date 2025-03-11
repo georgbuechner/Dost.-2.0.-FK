@@ -6,6 +6,7 @@ marginparsep=0.4cm]{geometry}
 % my custom stlye and functions stuff
 \usepackage{mystyle}
 \usepackage{nameref}
+\usepackage{float}
 
 \newcommand{\game}{\emph{Dost.-2.0 FK}}
 \newcommand{\creators}{\emph{alex \& fux}}
@@ -28,7 +29,7 @@ marginparsep=0.4cm]{geometry}
   {\includegraphics[scale=0.25]{peaceconference-1.jpg}}\\
   \vspace{1cm}
 }
-\author{\creators // \emph{ananymes kollektiv}}
+\author{\creators{} // \emph{ananymes kollektiv}}
 \date{{\small \today}}
 
 \begin{document}
@@ -53,6 +54,9 @@ marginparsep=0.4cm]{geometry}
 \mainmatter
 \chapter{Einleitung}
 \input{chapters/einleitung}
+
+\chapter{Setting}
+\input{chapters/setting}
 
 \chapter{Plot}
 \input{chapters/plot}
