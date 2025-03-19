@@ -65,10 +65,24 @@ Die App hat einige zentrale Funktionen für das Spiel:
     Messages. 
   \item Hacken anderer Spieler*innen (Nachrichten abfangen, lesen, aber durch
     die Verbindung der App mit den \ac{lsc}s auch \nameref{sec:blackouts}
-    herbeiführen) -> Hacken durch hacken im Computerspiel (M kann erkennen welche
-    NPCs welche Spieler*innen sind oder so ähnlich)
+    herbeiführen) -> Hacken durch hacken im Computerspiel (M wählt zu Beginn des
+    Spieles durch Fragen einen Charakter, dieser kann entweder mit einem der
+    Charaktere im Spiel identifiziert werden, oder \emph{ist} einer der
+    Charaktere -- hat z.B.~den gleichen Namen. Bei jeden Levelaufstieg o.ä.
+    erhält M kurz Zugriff auf dessen Nachrichten (-> Möglichkeit der
+    Spieler*innen Nachrichten selbst zu verschlüsseln, \emph{muss} auch über die
+    App sein, damit die Verschlüsselung \emph{pro Charakter} und nicht nur pro
+    Spieler*in aktiv ist, sonst könnte die neue Spieler*in nach einem Blackout
+    die verschlüsselten Nachrichten der alten Spieler*in ja nicht mehr lesen.
   \item Verwaltung von Finanzen (E-Pay System)
   \item Darstellung (und Steuerung) des Krieges
+  \item Die Lilie muss die App (bzw. den Server) unbedingt am Leben halten.
+    Sollte er jemals abstürzen, zeigt NGinx stattdessen einen Text an, der
+    entlarvt, dass die App und womöglich (z.B. nach dem x-ten Absturz) auch die
+    der Schweizer \ac{ndb} von der Lilie gehakt wurde.
+  \item Haken könnte zusätzlich über versteckte Endpunkte ausgeführt werden,
+    indem das web-interface permanent Beispiel-Requests schickt (die
+    Spieler*innen modifiziert schicken könnten)
 \end{itemize}
 
 \section{Krieg}
