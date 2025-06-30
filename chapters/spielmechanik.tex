@@ -48,13 +48,20 @@ Allerdings ist die Frage, wie diese Zwang bereits für den ersten Charakter den 
 erhält klar ist.\\\\
 %
 \emph{(Idee: Während dem Blackout ist die Spieler*in nicht in einen Charakter
-eingeloggt, bzw.~mit dem Tod wird sie sofort ausgeloggt. Damit verändert sich
+eingeloggt, bzw.~mit dem Tod wird sie sofort ausgeloggt. \st{Damit verändert sich
 das Layout der App (z.B.~Hintergrundfarbe, Schriftart etc.) und sie sieht 
-die Option, auch hier Nachrichten schreiben und Kontakte hinzufügen zu können. 
-Dadurch sollen sie erahnen können, dass es auch ein Spiel \qq{hinter} dem Spiel
-geben könnte. Nur sehr Spieler*innen haben bereits beim ersten Blackout Kontakte
-und sogar Nachrichten. Solche Spieler*innen sind diejenigen tendenziell die
-Storyline der Surrealistinnen entdecken.)}
+die Option, auch hier Nachrichten schreiben und Kontakte hinzufügen zu können.}
+Die Spieler*innen sind in einem anderen Raum, in dem auch das/ ein Textadventure
+gespielt werden können. 
+Es ist aber nicht alles ein Chat, sondern Text wird vor- und eingelesen. Alles
+was gesagt wurde, verschwindet, alles muss sich gemerkt werden. 
+Eine Spieler*innen-ID sorgt dennoch für Konsistenz.
+Dadurch sollen Spieler*innen erahnen können, dass es auch ein Spiel \qq{hinter} 
+dem Spiel geben könnte. 
+Nur sehr wenige Spieler*innen haben bereits beim ersten Blackout bereits Input
+(z.B.~ein Spielstand bei Blackout-Room-Textadventure).
+Solche Spieler*innen sind diejenigen tendenziell die Storyline der Surrealistinnen 
+entdecken.)}
 
 \section{App} 
 Die App hat einige zentrale Funktionen für das Spiel:
@@ -83,6 +90,14 @@ Die App hat einige zentrale Funktionen für das Spiel:
   \item Haken könnte zusätzlich über versteckte Endpunkte ausgeführt werden,
     indem das web-interface permanent Beispiel-Requests schickt (die
     Spieler*innen modifiziert schicken könnten)
+\end{itemize}
+
+Eine Möglichkeit wäre Mastodon zu nutzen. Dafür wäre folgendes wichtig: 
+\begin{itemize}
+  \item self-hosting (kann sich die App ohne Internet nur über
+    Netzwerkverbindung mit dem Server verbinden) 
+  \item bots 
+  \item Appearence Veränderung (z.B. auch Name ändern?)
 \end{itemize}
 
 \section{Krieg}
